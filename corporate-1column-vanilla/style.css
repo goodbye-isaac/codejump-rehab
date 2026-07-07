@@ -1,0 +1,53 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	li {
+		list-style: none;
+	}
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#header{
+	height: 100px;
+	background-color: khaki;
+	display: flex;
+	align-items: center;
+
+	.inner {
+		display: flex;	
+	}
+	.logo {
+		width: 150px;
+		padding: 0 20px;
+		img {
+			width: 100%;
+		}
+	}
+	
+	nav {
+		ul {
+			display: flex;
+
+		}
+	}
+	.contact {
+		color: white;
+		background-color: black;
+	}
+
+}
