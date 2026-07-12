@@ -148,7 +148,6 @@ body {
 #about {
 	width: 100%;
 	display: flex;
-	align-items: center;
 	margin-bottom: 120px;
 	.about-pic {
 		width: 55%;
@@ -162,7 +161,8 @@ body {
 	}
 	.about-content {
 		width: 45%;
-		padding: 180px 70px 0px;
+		padding: 0 70px;
+		padding-top: 180px;
 		font-size: 0.875rem;
 	}
 }
