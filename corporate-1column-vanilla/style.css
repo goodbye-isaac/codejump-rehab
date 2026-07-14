@@ -166,3 +166,31 @@ body {
 		font-size: 0.875rem;
 	}
 }
+
+#business {
+	margin-bottom: 200px;
+	.business-content {
+		.items {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 50px;
+			.item {
+				p {
+					margin-bottom: 10px;
+					font-size: 0.875rem;
+					font-weight: 600;
+				}
+				.item-img {
+					img {
+						width: 100%;
+						object-fit: cover;
+						vertical-align: bottom;
+					}
+				}
+			}	
+			.left {
+				transform: translateY(80px);
+			}
+		}
+	}
+}
