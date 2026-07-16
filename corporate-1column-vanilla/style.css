@@ -172,7 +172,8 @@ body {
 	.business-content {
 		.items {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 40% 40%;
+			justify-content: center;
 			gap: 50px;
 			.item {
 				p {
@@ -200,8 +201,8 @@ body {
 	display: flex;
 	align-items: center;
 	.company-card {
-		width: 55%;
-		padding: 100px 62px;
+		padding: 80px;
+		width: 580px;
 		background-color: white;
 		.company-content {
 			.company-list {
@@ -211,7 +212,7 @@ body {
 					dt {
 						font-size: 0.875rem;
 						font-weight: 300;
-						width: 100px;
+						width: 70px;
 						margin-right: 8px;
 					}
 					
@@ -219,14 +220,24 @@ body {
 						font-size: 0.875rem;
 						font-weight: 300;
 					}
+					
+					.dd-group {
+						dd + dd {
+							margin-top: 10px;
+						}
+					}
+				}
+				.list-item + .list-item {
+					margin-top: 10px;
 				}
 			}
 		}
 	}
 	.company-img {
-		width: 547px;
+		width: 53%;
 		height: 400px;
 		position: relative;
+		margin-left: -80px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -234,8 +245,8 @@ body {
 			vertical-align: bottom;
 			position: absolute;
 			top: 50%;
-			left: -50px;
 			transform: translateY(-50%);
+			z-index: 1000;
 		}
 	}
 }
