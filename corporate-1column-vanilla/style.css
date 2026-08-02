@@ -295,10 +295,10 @@ body {
 			height: 100%;
 			object-fit: cover;
 			vertical-align: bottom;
-			position: absolute;
+			/* position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			z-index: 1000;
+			z-index: 1000; */
 		}
 	}
 }
