@@ -166,7 +166,7 @@ body {
 	@media screen and (max-width: 900px) {
 		display: block;
 	}
-	.about-pic {
+	.about-img {
 		width: 55%;
 		height: 400px;
 		@media screen and (max-width: 900px) {
