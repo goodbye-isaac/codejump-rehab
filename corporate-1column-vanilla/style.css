@@ -21,7 +21,7 @@ body {
 		.en {
 			display: block;
 			font-size: 2.25rem;
-			letter-spacing: .36em;
+			letter-spacing: .3em;
 		}
 		.ja {
 			display: block;
@@ -295,10 +295,6 @@ body {
 			height: 100%;
 			object-fit: cover;
 			vertical-align: bottom;
-			/* position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 1000; */
 		}
 	}
 }
