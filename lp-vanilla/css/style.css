@@ -241,6 +241,14 @@ header {
       height: 100%;
       object-fit: cover;
       vertical-align: bottom;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease;
+      &.is-visible{
+        opacity: 1;
+      }
     }
   }
 }
