@@ -11,6 +11,7 @@
 body {
   font-family: "Yu Gothic Medium", "Yu Gothic", "游ゴシック Medium", "游ゴシック体", "YuGothic", sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 
   a {
     text-decoration: none;
@@ -269,6 +270,12 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      opacity: 0;
+      transition: transform .5s ease, opacity .5s ease;
+      &.is-slide{
+        transform: translateX(0);
+        opacity: 1;
+      }
       .reason-img {
         width: 87px;
         img {
@@ -291,11 +298,13 @@ header {
     .reason1 {
       border-radius: 0 8px 8px 0;
       top: 70px;
+      transform: translateX(-100%);
     }
     .reason2 {
       border-radius: 8px 0 0 8px;
       right: 0;
       bottom: 70px;
+      transform: translateX(100%);
       .reason-img {
         width: 60px;
       }

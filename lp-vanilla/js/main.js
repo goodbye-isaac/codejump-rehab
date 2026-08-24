@@ -46,3 +46,24 @@ if (fadeImages.length > 1) {
 		}
 	});
 }
+
+// IntersectionObserver
+const callback = (entries, observer) => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('is-slide');
+			observer.unobserve(entry.target);
+		}
+	});
+}
+
+const options = {
+	root: null,
+	rootMargin: '0px',
+	threshold: 0
+}
+
+const observer = new IntersectionObserver(callback,options);
+
+const elements = document.querySelectorAll('.js-slide-in');
+elements.forEach(el => observer.observe(el));
