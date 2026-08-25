@@ -2,17 +2,17 @@
 const hamburger = document.getElementById('js-hamburger');
 const nav = document.getElementById('js-nav');
 
-hamburger.addEventListener('click',() => {
+hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('is-open');
 	nav.classList.toggle('is-open');
-})
+});
 
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(navLink => {
-	navLink.addEventListener('click',()=> {
+	navLink.addEventListener('click', () => {
 		hamburger.classList.remove('is-open');
 		nav.classList.remove('is-open');		
-	})
+	});
 });
 
 /**
@@ -55,15 +55,15 @@ const callback = (entries, observer) => {
 			observer.unobserve(entry.target);
 		}
 	});
-}
+};
 
 const options = {
 	root: null,
 	rootMargin: '0px',
 	threshold: 0
-}
+};
 
-const observer = new IntersectionObserver(callback,options);
+const observer = new IntersectionObserver(callback, options);
 
 const elements = document.querySelectorAll('.js-slide-in');
 elements.forEach(el => observer.observe(el));
