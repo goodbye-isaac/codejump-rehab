@@ -35,7 +35,7 @@ if (fadeImages.length > 1) {
 		fadeImages[currentIndex].classList.add('is-visible');
 	};
 
-	const intervalId = setInterval(changeImage, INTERVAL_MS);
+	let intervalId = setInterval(changeImage, INTERVAL_MS);
 
 	// タブが非アクティブの間は interval を停止し、戻ったら再開（省電力）
 	document.addEventListener('visibilitychange', () => {
